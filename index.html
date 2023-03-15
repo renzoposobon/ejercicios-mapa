@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sitios Turisticos de Mendoza</title>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>		
+	<link rel="stylesheet" type="text/css" href="index.css"/>	
+</head>
+<body>
+  <h1 class="titulo-principal">Visita los sitios turisticos de Mendoza</h1>
+	<select name="select-location" id="select-location">
+		<option value="-34.7622129,-68.7747986">Seleccione un lugar:</option>
+    <option value="-35.8006547,-69.8226767">Caverna de las Brujas</option>
+    <option value="-32.5202764,-69.0109518">Villavicencio</option>
+    <option value="-32.8221855,-69.9324687">Puente del Inca</option>
+    <option value="-33.602117,-69.3843666">Manzano Histórico</option>
+    <option value="-32.9624942,-69.1887939">Dique Potrerillos</option>
+	</select>
+	<div id="map"></div>
+
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>   		
+	
+	<script src="index.js"></script>
+</body>
+</html>
