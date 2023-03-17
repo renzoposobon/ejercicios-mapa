@@ -5,23 +5,60 @@
 	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    		crossorigin=""/>		
-	<link rel="stylesheet" type="text/css" href="index.css"/>	
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-  <h1 class="titulo-principal">Visita los sitios turisticos de Mendoza</h1>
-	<select name="select-location" id="select-location">
-		<option value="-34.7622129,-68.7747986">Seleccione un lugar:</option>
-    <option value="-35.8006547,-69.8226767">Caverna de las Brujas</option>
-    <option value="-32.5202764,-69.0109518">Villavicencio</option>
-    <option value="-32.8221855,-69.9324687">Puente del Inca</option>
-    <option value="-33.602117,-69.3843666">Manzano Histórico</option>
-    <option value="-32.9624942,-69.1887939">Dique Potrerillos</option>
-	</select>
-	<div id="map"></div>
+    <div class="container">
+        <h2 class="text-secundary mt-5 fs-2 fw-bold text-center">Terremotos</h2>
+        <ol class="fs-4">
+            <li>Ingrese la fecha de inicio.</li>
+            <li>Ingrese la fecha de finalización.</li>
+            <li>Haga click en "Mostrar".</li>
+            <li>Aguarde un momento, la carga puede demorar unos segundos.</li>
+        </ol>
+    </div>
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col">
+                <label for="" class="text-primary">Fecha de inicio</label>
+                <input type="date" class="form-control shadow" id="date-start">
+            </div>
+            <div class="col">
+                <label for="" class="text-primary">Fecha de finalización</label>
+                <input type="date" class="form-control shadow" id="date-end">
+            </div>
+            <div class="col">
+                <button class="btn btn-primary mt-4" id="btn">Mostrar</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="container mt-3">
+        <div id="mapa-terremotos" class="mx-auto shadow"></div>
+    </div>
 
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>   		
-	
+	<div class="mapa-mendoza my-5 text-center">
+        <h2 class="titulo-principal fs-2 fw-bold text-center">Puntos turisticos de Mendoza</h2>
+	    <select name="select-location" id="select-location" class="my-2">
+          <option value="-34.7622129,-68.7747986">Seleccione un lugar:</option>
+          <option value="-35.8006547,-69.8226767">Caverna de las Brujas</option>
+          <option value="-32.5202764,-69.0109518">Villavicencio</option>
+          <option value="-32.8221855,-69.9324687">Puente del Inca</option>
+          <option value="-33.602117,-69.3843666">Manzano Histórico</option>
+          <option value="-32.9624942,-69.1887939">Dique Potrerillos</option>
+	    </select>
+	    <div id="map"></div>
+	</div>
+
+    <div class="my-5">
+        <h2 class="fs-2 fw-bold text-center">Prueba</h2>
+        <div id="map2"></div>
+    </div>
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 	<script src="index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+  </body>
 </body>
 </html>

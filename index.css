@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#mapa-terremotos {
+  height: 82vh;
+  width: 85%;
+  margin: 0 7.5%;
+}
+
 #map {
   height: 82vh;
-  width: 95%;
-  margin: 0 2.5%;
+  width: 70%;
+  margin: 0 15%;
+}
+
+#map2 {
+  height: 82vh;
+  width: 70%;
+  margin: 0 15%;
 }
